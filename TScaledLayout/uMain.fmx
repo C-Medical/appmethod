@@ -1,0 +1,51 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Fit
+    OriginalWidth = 480.000000000000000000
+    OriginalHeight = 320.000000000000000000
+    Size.Width = 480.000000000000000000
+    Size.Height = 320.000000000000000000
+    Size.PlatformDefault = False
+    object Button1: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Button1'
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = 'test'
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+    end
+    object CheckBox1: TCheckBox
+      Position.X = 24.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 2
+      Text = 'CheckBox1'
+    end
+    object Label1: TLabel
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 128.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 199.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 24.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Try to resize form!'
+    end
+  end
+end

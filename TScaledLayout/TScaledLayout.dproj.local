@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014/10/24 16:10:49.048,=C:\Users\izumi_j\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/24 16:13:21.145,C:\Appmethod\Projects\C-Medical\appmethod\TScaledLayout\uMain.fmx=C:\Users\izumi_j\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/10/24 16:13:21.145,C:\Appmethod\Projects\C-Medical\appmethod\TScaledLayout\uMain.pas=C:\Users\izumi_j\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/24 17:25:48.011,C:\Appmethod\Projects\C-Medical\appmethod\TScaledLayout\TScaledLayout.dproj=C:\Users\izumi_j\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
