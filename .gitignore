@@ -1,0 +1,5 @@
+*.identcache
+*.res
+*.exe
+*.dcu
+__history
