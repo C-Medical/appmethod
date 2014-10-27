@@ -1,0 +1,12 @@
+inherited frmAlignTest_iPad: TfrmAlignTest_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited pnlSetting: TPanel
+    Size.Width = 768.000000000000000000
+  end
+  inherited pnlBase: TPanel
+    Size.Width = 768.000000000000000000
+    Size.Height = 963.000000000000000000
+  end
+end
