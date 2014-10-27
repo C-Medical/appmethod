@@ -1,0 +1,110 @@
+object frmAlignTest: TfrmAlignTest
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnlSetting: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblAlign: TLabel
+      Position.X = 144.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Choose align.'
+    end
+    object cmbAlign: TComboBox
+      Position.X = 232.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 265.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = cmbAlignChange
+    end
+    object lblSelection: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'pnlTarget1 is selected.'
+    end
+  end
+  object pnlBase: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object pnlTarget1: TPanel
+      Position.X = 100.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'Panel3Style1'
+      TabOrder = 1
+      object rect1: TRectangle
+        Align = Client
+        Cursor = crHandPoint
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF001AFC
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF26F0FF
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = PnlClick
+      end
+    end
+    object pnlTarget2: TPanel
+      Position.X = 200.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'Panel3Style1'
+      TabOrder = 0
+      object rect2: TRectangle
+        Align = Client
+        Cursor = crHandPoint
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF60FC00
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFFFFE126
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = PnlClick
+      end
+    end
+  end
+end
