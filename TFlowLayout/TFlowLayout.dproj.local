@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2014/10/26 19:23:28.967,=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/26 19:26:57.950,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\uMain.pas=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/26 19:26:57.950,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\uMain.fmx=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2014/10/26 19:27:14.937,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\TFlowLayout.dproj=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2014/10/26 19:23:28.000.967,=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/26 19:26:57.000.950,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\uMain.pas=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/26 19:26:57.000.950,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\uMain.fmx=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/10/26 19:27:14.000.937,C:\Appmethods\Projects\CM\appmethod\TFlowLayout\TFlowLayout.dproj=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

@@ -27,7 +27,7 @@ object Form1: TForm1
       VerticalGap = 10.000000000000000000
       object Button1: TButton
         TabOrder = 0
-        Text = 'Button1'
+        Text = 'Click me'
         OnClick = Button1Click
       end
       object Button2: TButton
