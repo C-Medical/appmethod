@@ -4,9 +4,9 @@
     <Transaction>2014/10/06 22:34:36.000.921,=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\SplitPaneView1.pas</Transaction>
     <Transaction>2014/10/06 22:34:36.000.664,=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\GridPaneView1.pas</Transaction>
     <Transaction>2014/10/06 22:35:24.000.722,=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/27 23:45:38.559,=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/28 00:53:36.803,E:\src\appmethod\Components\LiveBinding\Main.pas=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/28 00:53:36.803,E:\src\appmethod\Components\LiveBinding\Main.fmx=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2014/10/28 00:54:06.275,E:\src\appmethod\Components\LiveBinding\LiveBindingPart1.dproj=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/10/27 23:45:38.000.559,=C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/28 00:53:36.000.803,C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\src\appmethod\Components\LiveBinding\Main.pas</Transaction>
+    <Transaction>2014/10/28 00:53:36.000.803,C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Unit1.fmx=E:\src\appmethod\Components\LiveBinding\Main.fmx</Transaction>
+    <Transaction>2014/10/28 00:54:06.000.275,C:\Documents and Settings\masahiro\My Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\src\appmethod\Components\LiveBinding\LiveBindingPart1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

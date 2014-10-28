@@ -114,11 +114,11 @@ object Form1: TForm1
           Size.PlatformDefault = False
           StyleLookup = 'listboxitemlabel'
           TextSettings.Font.Size = 18.000000000000000000
-          Text = '755384'
+          Text = '4290283019'
         end
         object ColorBox1: TColorBox
           Align = MostLeft
-          Color = x000B86B8
+          Color = claDarkgoldenrod
           Size.Width = 50.000000000000000000
           Size.Height = 57.000000000000000000
           Size.PlatformDefault = False
@@ -208,7 +208,7 @@ object Form1: TForm1
       item
         Name = 'Color1'
         FieldType = ftUInteger
-        Generator = 'Colors'
+        Generator = 'AlphaColors'
         ReadOnly = False
       end>
     ScopeMappings = <>
