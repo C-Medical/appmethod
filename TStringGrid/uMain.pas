@@ -42,12 +42,16 @@ implementation
 uses
   uDlg;
 
+var
+  dlg: TForm2;
+
 {$R *.fmx}
 {$R *.XLgXhdpiTb.fmx ANDROID}
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   FDataList := TObjectList<TDictionary<String, String>>.Create;
+  dlg := TForm2.Create(Self);
   StringGrid1.DefaultDrawing := True;
   StringGrid1.RowCount := 0;
 end;
@@ -55,17 +59,16 @@ end;
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(FDataList);
+  FreeAndNil(dlg);
 end;
 
 procedure TForm1.btnAddClick(Sender: TObject);
-var
-  dlg: TForm2;
-  data: TDictionary<String, String>;
-  s: String;
 begin
-  dlg := TForm2.Create(Self);
   // Use anonymous function when call ShowModal!
   dlg.ShowModal(procedure(ModalResult: TModalResult)
+    var
+      data: TDictionary<String, String>;
+      s: String;
     begin
       if ModalResult = mrOk then
       begin
@@ -82,9 +85,6 @@ begin
         // data.TryGetValue('Col1', s);
         // StringGrid1.Cells[0, Pred(FDataList.Count)] := s;
       end;
-
-      // Use DisposeOf instead of try~finally~dlg.Free;~end;
-      dlg.DisposeOf;
     end);
 end;
 
@@ -97,6 +97,8 @@ var
 begin
   // Custom draw cell.
   data := FDataList[Row];
+  if not Assigned(data) then Exit;
+  
 
   if Column.Name = 'StringColumn1' then
   begin
@@ -110,6 +112,7 @@ begin
   end else if Column.Name = 'StringColumn3' then
   begin
     data.TryGetValue('Col3', s);
+    Canvas.Font.Style := [TFontStyle.fsBold];
     Canvas.FillText(Bounds, s, True, 0.75,
       [TFillTextFlag.RightToLeft], TTextAlign.Leading);
   end;
