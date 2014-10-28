@@ -64,11 +64,11 @@ var
   s: String;
 begin
   dlg := TForm2.Create(Self);
-  try
-    // Use anonymous function when call ShowModal!
-    dlg.ShowModal(procedure(ModalResult: TModalResult)
+  // Use anonymous function when call ShowModal!
+  dlg.ShowModal(procedure(ModalResult: TModalResult)
+    begin
+      if ModalResult = mrOk then
       begin
-        if ModalResult <> mrOk then Exit;
         data := TDictionary<String, String>.Create;
         data.Add('Col1', dlg.Col1);
         data.Add('Col2', dlg.Col2);
@@ -81,11 +81,11 @@ begin
         // You can set value by Cells property.
         // data.TryGetValue('Col1', s);
         // StringGrid1.Cells[0, Pred(FDataList.Count)] := s;
-      end);
+      end;
 
-  finally
-    dlg.Release;
-  end;
+      // Use DisposeOf instead of try~finally~dlg.Free;~end;
+      dlg.DisposeOf;
+    end);
 end;
 
 procedure TForm1.StringGrid1DrawColumnCell(Sender: TObject;
