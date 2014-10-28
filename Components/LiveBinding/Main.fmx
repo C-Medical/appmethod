@@ -1,0 +1,232 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 540
+  ClientWidth = 445
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object MultiView1: TMultiView
+    Size.Width = 233.000000000000000000
+    Size.Height = 540.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 232.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Position.X = 56.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'select color'
+      end
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      ItemIndex = 0
+      Align = Client
+      Size.Width = 232.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 212.000000000000000000
+    OriginalHeight = 540.000000000000000000
+    Size.Width = 212.000000000000000000
+    Size.Height = 540.000000000000000000
+    Size.PlatformDefault = False
+    object DetailToolbar: TToolBar
+      Size.Width = 212.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object MasterButton: TSpeedButton
+        Align = Client
+        Size.Width = 390.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbutton'
+        Visible = False
+      end
+      object btnUp: TSpeedButton
+        Action = LiveBindingsBindNavigatePrior1
+        Align = Right
+        Enabled = True
+        Position.X = 123.000000000000000000
+        Size.Width = 42.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowuptoolbuttonborderedleft'
+        Visible = True
+      end
+      object btnDown: TSpeedButton
+        Action = LiveBindingsBindNavigateNext1
+        Align = Right
+        Enabled = True
+        Margins.Right = 5.000000000000000000
+        Position.X = 165.000000000000000000
+        Size.Width = 42.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowdowntoolbuttonborderedright'
+        Visible = True
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Margins.Top = 10.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 212.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 212.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblName: TLabel
+          Align = Top
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 50.000000000000000000
+          Size.Width = 162.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          TextSettings.Font.Size = 18.000000000000000000
+          Text = 'Darkgoldenrod'
+        end
+        object Label2: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 162.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          TextSettings.Font.Size = 18.000000000000000000
+          Text = '4290283019'
+        end
+        object ColorBox1: TColorBox
+          Align = MostLeft
+          Color = claDarkgoldenrod
+          Size.Width = 50.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+      end
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 321.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Lines.Strings = (
+        #12300#35500#26126#12301
+        '1.'#12487#12540#12479
+        #12288'PrototypeBindSource'#12364#20869#37096#12391#29983#25104#12290
+        #12288#12514#12483#12463#12487#12540#12479#12392#12363#12371#12356#12388#12391#20316#12428#12427#12363#12418#12290
+        '2.ListView ('#21452#26041#21521')'
+        '  1'#12398#12487#12540#12479#12392'ListItem'#12434#12496#12452#12531#12489#12290
+        '  LiveBinding'#12487#12470#12452#12490#12434#20351#12358#12392#27005#12290
+        '3.'#12521#12505#12523'('#21336#26041#21521')'
+        '  Source->Label'#12408#12398#21336#19968#26041#21521#12496#12452#12531#12489
+        '4.'#31227#21205#12508#12479#12531
+        #12288'1)ActionList'#12391#27161#28310#12450#12463#12471#12519#12531#12363#12425#12496#12452#12531#12489#31995#12450#12463#12471#12519#12531#36984#25246
+        '  2)button'#12450#12463#12471#12519#12531#12391'1)'#12398#12450#12463#12471#12519#12531#36984#25246
+        ''
+        #12300#24863#24819#12301
+        #20840#20307#30340#12395#21033#29992#20385#20516#12399#24494#22937#65311
+        #12477#12540#12473#12434#26360#12367#24517#35201#12394#12356#12364#12289#12477#12540#12473#26360#12369#12400#12391#12365#12427#12290
+        'ColorBox'#12395#33394#12434#12496#12452#12531#12489#12375#12383#12363#12387#12383#12364#12289#12391#12365#12394#12363#12387#12383#12290
+        '')
+    end
+  end
+  object ColorAnimation1: TColorAnimation
+    Duration = 0.200000002980232200
+    StartValue = claWhite
+    StopValue = claNull
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 8
+    Top = 8
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = PrototypeBindSource1
+      FieldName = 'ColorsName1'
+      Component = lblName
+      ComponentProperty = 'Text'
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = PrototypeBindSource1
+      FieldName = 'ColorsName1'
+      Control = ListView1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = PrototypeBindSource1
+      FieldName = 'Color1'
+      Component = Label2
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldColor2: TLinkPropertyToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      DataSource = PrototypeBindSource1
+      FieldName = 'Color1'
+      Component = ColorBox1
+      ComponentProperty = 'Color'
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Color1'
+        FieldType = ftUInteger
+        Generator = 'AlphaColors'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 177
+    Top = 8
+  end
+  object ActionList1: TActionList
+    Left = 257
+    Top = 8
+    object LiveBindingsBindNavigateNext1: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = #27425#12408
+      DataSource = PrototypeBindSource1
+    end
+    object LiveBindingsBindNavigatePrior1: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = #21069#12408
+      DataSource = PrototypeBindSource1
+    end
+  end
+end

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2014/10/27 15:12:26.843,=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/27 20:00:15.187,C:\subversion\999_c_med\appmethod\AlignTest\frmMain1.pas=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2014/10/27 20:00:15.203,C:\subversion\999_c_med\appmethod\AlignTest\frmMain1.fmx=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2014/10/27 20:00:32.593,C:\subversion\999_c_med\appmethod\AlignTest\AlignTest.dproj=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2014/10/27 15:12:26.000.843,=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/27 20:00:15.000.203,C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\subversion\999_c_med\appmethod\AlignTest\frmMain1.fmx</Transaction>
+    <Transaction>2014/10/27 20:00:15.000.187,C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\subversion\999_c_med\appmethod\AlignTest\frmMain1.pas</Transaction>
+    <Transaction>2014/10/27 20:00:32.000.593,C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\subversion\999_c_med\appmethod\AlignTest\AlignTest.dproj</Transaction>
   </Transactions>
 </BorlandProject>

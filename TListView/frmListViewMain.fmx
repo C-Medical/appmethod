@@ -1,0 +1,127 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = #12522#12473#12488#12499#12517#12540#12481#12515#12524#12531#12472
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object pnlControl: TPanel
+    Align = Left
+    Size.Width = 169.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnAddTextItem: TCornerButton
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 137.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'AddTextItem'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnAddTextItemClick
+    end
+    object btnDelItem: TCornerButton
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 105.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'DeleteItem'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      OnClick = btnDelItemClick
+    end
+    object btnSearch: TSpeedButton
+      StaysPressed = True
+      Position.X = 64.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'searchtoolbutton'
+      Text = #26908#32034#31379#12458#12540#12503#12531
+      OnClick = btnSearchClick
+    end
+  end
+  object pnlList: TPanel
+    Align = Client
+    Size.Width = 471.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lstView: TListView
+      ItemAppearanceClassName = 'TImageListItemRightButtonAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemRightButtonDeleteAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Client
+      Size.Width = 471.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ItemAppearanceObjects.ItemObjects.TextButton.TextColor = claNavy
+      ItemAppearanceObjects.ItemObjects.TextButton.TintColor = claBlue
+      OnButtonClick = lstViewButtonClick
+      OnPullRefresh = lstViewPullRefresh
+      PullToRefresh = True
+    end
+  end
+  object source: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'CurrencyField1'
+        FieldType = ftCurrency
+        Generator = 'Currency'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 353
+    Top = 88
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 356
+    Top = 133
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      Control = lstView
+      Track = True
+      FillDataSource = source
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end
+        item
+          SourceMemberName = 'CurrencyField1'
+          ControlMemberName = 'ButtonText'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

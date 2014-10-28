@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014/10/27 20:35:26.218,=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/27 21:13:09.296,C:\subversion\999_c_med\appmethod\TListView\frmListViewMain.pas=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/27 21:13:09.296,C:\subversion\999_c_med\appmethod\TListView\frmListViewMain.fmx=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/10/27 21:13:22.843,C:\subversion\999_c_med\appmethod\TListView\TListView.dproj=C:\Documents and Settings\Takao\My Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
