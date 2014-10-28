@@ -15,21 +15,21 @@ object frmMain: TfrmMain
     Size.PlatformDefault = False
     TabOrder = 1
     object btnAddTextItem: TCornerButton
-      Position.X = 24.000000000000000000
-      Position.Y = 88.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
       Sides = [Top, Left, Bottom, Right]
-      Size.Width = 105.000000000000000000
+      Size.Width = 137.000000000000000000
       Size.Height = 22.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 2
+      TabOrder = 1
       Text = 'AddTextItem'
       XRadius = 3.000000000000000000
       YRadius = 3.000000000000000000
       OnClick = btnAddTextItemClick
     end
     object btnDelItem: TCornerButton
-      Position.X = 24.000000000000000000
-      Position.Y = 176.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
       Sides = [Top, Left, Bottom, Right]
       Size.Width = 105.000000000000000000
       Size.Height = 22.000000000000000000
@@ -42,24 +42,13 @@ object frmMain: TfrmMain
     end
     object btnSearch: TSpeedButton
       StaysPressed = True
-      Position.X = 40.000000000000000000
-      Position.Y = 8.000000000000000000
+      Position.X = 64.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
       StyleLookup = 'searchtoolbutton'
       Text = #26908#32034#31379#12458#12540#12503#12531
       OnClick = btnSearchClick
-    end
-    object btnAddComboBox: TCornerButton
-      Position.X = 8.000000000000000000
-      Position.Y = 120.000000000000000000
-      Sides = [Top, Left, Bottom, Right]
-      Size.Width = 137.000000000000000000
-      Size.Height = 22.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 1
-      Text = 'AddComboBoxItem'
-      XRadius = 3.000000000000000000
-      YRadius = 3.000000000000000000
-      OnClick = btnAddComboBoxClick
     end
   end
   object pnlList: TPanel
@@ -69,8 +58,8 @@ object frmMain: TfrmMain
     Size.PlatformDefault = False
     TabOrder = 0
     object lstView: TListView
-      ItemAppearanceClassName = 'TListItemAppearance'
-      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      ItemAppearanceClassName = 'TImageListItemRightButtonAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemRightButtonDeleteAppearance'
       HeaderAppearanceClassName = 'TListHeaderObjects'
       FooterAppearanceClassName = 'TListHeaderObjects'
       Align = Client
@@ -78,8 +67,61 @@ object frmMain: TfrmMain
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
+      ItemAppearanceObjects.ItemObjects.TextButton.TextColor = claNavy
+      ItemAppearanceObjects.ItemObjects.TextButton.TintColor = claBlue
+      OnButtonClick = lstViewButtonClick
       OnPullRefresh = lstViewPullRefresh
       PullToRefresh = True
+    end
+  end
+  object source: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'CurrencyField1'
+        FieldType = ftCurrency
+        Generator = 'Currency'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 353
+    Top = 88
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 356
+    Top = 133
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = #12463#12452#12483#12463' '#12496#12452#12531#12487#12451#12531#12464
+      Control = lstView
+      Track = True
+      FillDataSource = source
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end
+        item
+          SourceMemberName = 'CurrencyField1'
+          ControlMemberName = 'ButtonText'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
     end
   end
 end
