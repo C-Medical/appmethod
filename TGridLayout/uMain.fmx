@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object GridLayout1: TGridLayout
+    Align = Client
+    ItemHeight = 32.000000000000000000
+    ItemWidth = 64.000000000000000000
+    Orientation = Horizontal
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Click me'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 64.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Button2'
+    end
+    object Button3: TButton
+      Position.X = 128.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Button3'
+    end
+    object Button4: TButton
+      Position.X = 192.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Button4'
+    end
+    object Button5: TButton
+      Position.X = 256.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Button5'
+    end
+    object Button6: TButton
+      Position.Y = 32.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Button6'
+    end
+    object Button7: TButton
+      Position.X = 64.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Button7'
+    end
+    object Button8: TButton
+      Position.X = 128.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Button8'
+    end
+    object Button9: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Button9'
+    end
+    object Button10: TButton
+      Position.X = 256.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = 'Button10'
+    end
+    object Label1: TLabel
+      Position.Y = 64.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Resize form!'
+    end
+  end
+end

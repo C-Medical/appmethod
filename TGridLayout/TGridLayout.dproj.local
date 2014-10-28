@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/10/27 22:22:55.000.402,=C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/27 22:23:26.000.780,C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Appmethods\Projects\CM\appmethod\TGridLayout\uMain.pas</Transaction>
+    <Transaction>2014/10/27 22:23:26.000.780,C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Appmethods\Projects\CM\appmethod\TGridLayout\uMain.fmx</Transaction>
+    <Transaction>2014/10/27 22:23:32.000.834,C:\Users\純一郎\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Appmethods\Projects\CM\appmethod\TGridLayout\TGridLayout.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
