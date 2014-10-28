@@ -1,0 +1,104 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Fit
+    OriginalWidth = 480.000000000000000000
+    OriginalHeight = 480.000000000000000000
+    Size.Width = 480.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object FlowLayout1: TFlowLayout
+      Align = Client
+      Margins.Top = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      HorizontalGap = 10.000000000000000000
+      VerticalGap = 5.000000000000000000
+      object Label1: TLabel
+        Size.Width = 60.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Col1'
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 70.000000000000000000
+      end
+      object FlowLayoutBreak1: TFlowLayoutBreak
+        ChangesRules = False
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+      end
+      object Label2: TLabel
+        Position.Y = 27.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Col2'
+      end
+      object DateEdit1: TDateEdit
+        Date = 41940.000000000000000000
+        Position.X = 70.000000000000000000
+        Position.Y = 27.000000000000000000
+        TabOrder = 4
+      end
+      object FlowLayoutBreak2: TFlowLayoutBreak
+        ChangesRules = False
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+      end
+      object Label3: TLabel
+        Position.Y = 54.000000000000000000
+        Size.Width = 60.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Col3'
+      end
+      object NumberBox1: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 7
+        Cursor = crIBeam
+        Position.X = 70.000000000000000000
+        Position.Y = 54.000000000000000000
+      end
+      object FlowLayoutBreak3: TFlowLayoutBreak
+        ChangesRules = True
+        Justify = Center
+        JustifyLastLine = Center
+        FlowDirection = LeftToRight
+        HorizontalGap = 10.000000000000000000
+      end
+      object Button1: TButton
+        Position.X = 83.000000000000000000
+        Position.Y = 81.000000000000000000
+        TabOrder = 9
+        Text = 'OK'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 173.000000000000000000
+        Position.Y = 81.000000000000000000
+        TabOrder = 10
+        Text = 'Cancel'
+        OnClick = Button2Click
+      end
+    end
+  end
+end

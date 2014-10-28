@@ -1,0 +1,18 @@
+inherited Form1_XLgXhdpiTb: TForm1_XLgXhdpiTb
+  ClientHeight = 775
+  ClientWidth = 1280
+  DesignerMasterStyle = 0
+  inherited ScaledLayout1: TScaledLayout
+    OriginalWidth = 775.000000000000000000
+    OriginalHeight = 775.000000000000000000
+    Size.Width = 775.000000000000000000
+    Size.Height = 775.000000000000000000
+    inherited FlowLayout1: TFlowLayout
+      Size.Width = 775.000000000000000000
+    end
+    inherited StringGrid1: TStringGrid
+      Size.Width = 775.000000000000000000
+      Size.Height = 732.000000000000000000
+    end
+  end
+end
