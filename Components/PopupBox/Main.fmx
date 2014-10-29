@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 383
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object PopupBox1: TPopupBox
+    Position.X = 32.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = #12362#12356#12383#12384#12369
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Position.X = 24.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Lines.Strings = (
+      'PopupBox'
+      ''
+      #12463#12522#12483#12463#12377#12427#12392#12300#25277#35937#12456#12521#12540#12303#12364#20986#12427#12435#12384#12424#12394#12540)
+  end
+  object PopupBox2: TPopupBox
+    Items.Strings = (
+      #12426#12435#12372
+      #12400#12394#12394
+      #12497#12458#12540#12531
+      #12473#12452#12459
+      #12365#12421#12358#12426
+      #12488#12510#12488
+      #12524#12479#12473)
+    ItemIndex = 0
+    Position.X = 32.000000000000000000
+    Position.Y = 56.000000000000000000
+    RepeatClick = True
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StaysPressed = True
+    TabOrder = 4
+  end
+end
