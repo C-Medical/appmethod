@@ -1,0 +1,134 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 2
+    Text = 'Set Style'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Position.X = 80.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'Air'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Amakrits'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'AquaGraphite'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'Blend'
+    end
+    object ListBoxItem5: TListBoxItem
+      Position.Y = 76.000000000000000000
+      TabOrder = 4
+      Text = 'AndroidDark'
+    end
+    object ListBoxItem6: TListBoxItem
+      Position.Y = 95.000000000000000000
+      TabOrder = 5
+      Text = 'AndroidLigtht'
+    end
+    object ListBoxItem7: TListBoxItem
+      Position.Y = 114.000000000000000000
+      TabOrder = 6
+      Text = 'Dark'
+    end
+    object ListBoxItem8: TListBoxItem
+      Position.Y = 133.000000000000000000
+      TabOrder = 7
+      Text = 'GoldenGraphite'
+    end
+    object ListBoxItem9: TListBoxItem
+      Position.Y = 152.000000000000000000
+      TabOrder = 8
+      Text = 'iOSBlack'
+    end
+    object ListBoxItem10: TListBoxItem
+      Position.Y = 171.000000000000000000
+      TabOrder = 9
+      Text = 'iOSTransparent'
+    end
+    object ListBoxItem11: TListBoxItem
+      Position.Y = 190.000000000000000000
+      TabOrder = 10
+      Text = 'Light'
+    end
+    object ListBoxItem12: TListBoxItem
+      Position.Y = 209.000000000000000000
+      TabOrder = 11
+      Text = 'Transparent'
+    end
+  end
+  object CheckBox1: TCheckBox
+    Position.X = 304.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 5
+    Text = 'CheckBox1'
+  end
+  object RadioButton1: TRadioButton
+    Position.X = 304.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 6
+    Text = 'RadioButton1'
+  end
+  object Label1: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'Label1'
+  end
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 312.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 8
+  end
+  object ComboBox1: TComboBox
+    Position.X = 312.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 9
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Position.X = 312.000000000000000000
+    Position.Y = 184.000000000000000000
+  end
+  object DateEdit1: TDateEdit
+    Date = 41942.000000000000000000
+    Position.X = 312.000000000000000000
+    Position.Y = 216.000000000000000000
+    TabOrder = 11
+  end
+  object StyleBook1: TStyleBook
+    Left = 24
+    Top = 16
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+end
