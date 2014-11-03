@@ -1,0 +1,67 @@
+object frmMainBase: TfrmMainBase
+  Left = 0
+  Top = 0
+  Caption = 'base form'
+  ClientHeight = 640
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object mlvMenu: TMultiView
+    TargetControl = MainLayout
+    MasterButton = btnShowMenu
+    Size.Width = 200.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 199.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnHideMultiView: TSpeedButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowlefttoolbutton'
+        Text = 'btnHideMultiView'
+        OnClick = btnHideMultiViewClick
+      end
+    end
+  end
+  object MainLayout: TLayout
+    Align = Client
+    Size.Width = 280.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object toolbarMain: TToolBar
+      Size.Width = 280.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblTitle: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style, FontColor, Other]
+        Size.Width = 280.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        Text = 'xxx'
+        object btnShowMenu: TButton
+          Align = Client
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbutton'
+          TabOrder = 0
+          Text = 'menu'
+          Visible = False
+        end
+      end
+    end
+  end
+end

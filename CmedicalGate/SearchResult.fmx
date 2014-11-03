@@ -1,0 +1,143 @@
+object frmSearchResults: TfrmSearchResults
+  Left = 0
+  Top = 0
+  Caption = 'Search Result'
+  ClientHeight = 640
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object toolbarMain: TToolBar
+    Size.Width = 480.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblSearchResults: TLabel
+      Align = Client
+      StyledSettings = [Family, Size, Style, FontColor, Other]
+      Size.Width = 480.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      Text = 'Search Results'
+      object btnShowMenu: TButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowlefttoolbutton'
+        TabOrder = 0
+        Text = 'menu'
+        OnClick = btnShowMenuClick
+      end
+    end
+  end
+  object tbcSearchResults: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 480.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = Bottom
+    OnChange = tbcSearchResultsChange
+    object tbSRList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 240.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'List'
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnItemClick = ListBoxItemClick
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 480.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Hospital Near Me.'
+        end
+        object item1: TListBoxItem
+          ItemData.Detail = #21942#26989#26178#38291' 10'#26178'-15'#26178
+          ItemData.Accessory = aMore
+          Position.Y = 30.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 3
+          Text = 'AAA'#21307#38498
+        end
+        object ListBoxItem1: TListBoxItem
+          ItemData.Detail = #26376'-'#37329' 10'#26178'-17'#26178
+          ItemData.Accessory = aMore
+          Position.Y = 74.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'BBB'#12463#12522#12491#12483#12463
+        end
+        object ListBoxItem2: TListBoxItem
+          ItemData.Accessory = aMore
+          Position.Y = 118.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'CCC'#32207#21512#30149#38498
+        end
+        object CalloutPanel1: TCalloutPanel
+          Align = Bottom
+          Padding.Top = 20.000000000000000000
+          Padding.Bottom = 20.000000000000000000
+          Margins.Left = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 463.000000000000000000
+          Size.Width = 420.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          CalloutWidth = 50.000000000000000000
+          CalloutLength = 20.000000000000000000
+          CalloutPosition = Bottom
+          CalloutOffset = 100.000000000000000000
+          object Label1: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 16.000000000000000000
+            Size.Width = 177.000000000000000000
+            Size.Height = 23.000000000000000000
+            Size.PlatformDefault = False
+            Text = #22320#22259#12418#12354#12427#12424#65281
+          end
+        end
+      end
+    end
+    object tbSRMap: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 240.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Map'
+      object WebBrowser1: TWebBrowser
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

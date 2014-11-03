@@ -1,0 +1,64 @@
+inherited frmReservationList: TfrmReservationList
+  Caption = 'Reservation List'
+  DesignerMasterStyle = 3
+  inherited MainLayout: TLayout
+    inherited toolbarMain: TToolBar
+      TabOrder = 1
+      inherited lblTitle: TLabel
+        Text = 'Reservation List'
+      end
+    end
+    object lbxReservationList: TListBox
+      Align = Client
+      Size.Width = 280.000000000000000000
+      Size.Height = 592.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = lbxReservationListItemClick
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Size.Width = 280.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Current Reservation'
+      end
+      object item1: TListBoxItem
+        ItemData.Detail = '14'#26178#12372#12429#12289'12'#30058#30446
+        ItemData.Accessory = aMore
+        Position.Y = 30.000000000000000000
+        StyleLookup = 'listboxitemrightdetail'
+        TabOrder = 1
+        Text = 'xxx'#12463#12522#12491#12483#12463
+      end
+      object listItemHeaderHistory: TListBoxGroupHeader
+        Position.Y = 74.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Reservation History'
+      end
+      object CalloutPanel1: TCalloutPanel
+        Align = Bottom
+        Padding.Top = 20.000000000000000000
+        Padding.Bottom = 20.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 512.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        CalloutWidth = 50.000000000000000000
+        CalloutLength = 20.000000000000000000
+        CalloutPosition = Bottom
+        CalloutOffset = 100.000000000000000000
+      end
+    end
+  end
+end

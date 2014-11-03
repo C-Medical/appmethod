@@ -1,0 +1,78 @@
+object MenuBox: TMenuBox
+  Left = 0
+  Top = 0
+  Caption = 'menu'
+  ClientHeight = 640
+  ClientWidth = 200
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lbxMenu: TListBox
+    Align = Client
+    Size.Width = 200.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object listItemTopPage: TListBoxItem
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Top Page'
+      OnClick = listItemTopPageClick
+    end
+    object listItemFindHotel: TListBoxItem
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Find a hospital'
+      OnClick = listItemFindHotelClick
+    end
+    object listItemReservaionList: TListBoxItem
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'My Reservations'
+      OnClick = listItemReservaionListClick
+    end
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Position.Y = 132.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Account Info.'
+    end
+    object ListBoxItem18: TListBoxItem
+      ItemData.Accessory = aDetail
+      Position.Y = 162.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 7
+      Text = 'My profile'
+    end
+    object ListBoxItem3: TListBoxItem
+      ItemData.Accessory = aDetail
+      Position.Y = 206.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 6
+      Text = 'Sign out'
+    end
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Size.Width = 200.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end
