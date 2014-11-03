@@ -1,0 +1,164 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Location Sample'
+  ClientHeight = 696
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object mvMenu: TMultiView
+    TargetControl = Layout1
+    DrawerOptions.Mode = PushingDetailView
+    MasterButton = Button1
+    Size.Width = 250.000000000000000000
+    Size.Height = 696.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 249.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnHideMultiView: TSpeedButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowlefttoolbutton'
+        Text = 'btnHideMultiView'
+        OnClick = btnHideMultiViewClick
+      end
+    end
+    object lbxMenu: TListBox
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 648.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object ListBoxItem1: TListBoxItem
+        StyledSettings = [Family, Style, FontColor, Other]
+        StyleLookup = 'listboxitemnodetail'
+        TabOrder = 0
+        Text = #20301#32622#24773#22577#12434#26377#21177#12395#12377#12427
+        object swLocationSensor: TSwitch
+          IsChecked = False
+          Position.X = 160.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnSwitch = swLocationSensorSwitch
+        end
+      end
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Position.Y = 44.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = #20301#32622#24773#22577
+      end
+      object ListBoxItemLatitude: TListBoxItem
+        Position.Y = 74.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 9
+        Text = #32239#24230
+      end
+      object ListBoxItemLongitude: TListBoxItem
+        Position.Y = 118.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 8
+        Text = #32076#24230
+      end
+      object ListBoxGroupHeader2: TListBoxGroupHeader
+        Position.Y = 162.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #29694#22312#22320
+      end
+      object ListBoxItemAdminArea: TListBoxItem
+        Position.Y = 192.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 7
+        Text = #37117#36947#24220#30476
+      end
+      object ListBoxItemLocality: TListBoxItem
+        Position.Y = 236.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 5
+        Text = #24066#21306#30010#26449
+      end
+      object ListBoxItemSubLocality: TListBoxItem
+        Position.Y = 280.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 4
+        Text = #22320#21517
+      end
+      object ListBoxItemThoroughfare: TListBoxItem
+        Position.Y = 324.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 2
+        Text = #36890#12426
+      end
+      object ListBoxItemSubThoroughfare: TListBoxItem
+        Position.Y = 368.000000000000000000
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 3
+        Text = #12469#12502#36890#12426
+      end
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 696.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object toolbarMain: TToolBar
+      Size.Width = 390.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style, FontColor, Other]
+        Size.Width = 390.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        Text = #20301#32622
+        object Button1: TButton
+          Align = Client
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbutton'
+          TabOrder = 0
+          Text = 'Button1'
+          Visible = False
+        end
+      end
+    end
+    object WebBrowser1: TWebBrowser
+      Align = Client
+      Size.Width = 390.000000000000000000
+      Size.Height = 648.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object LocationSensorMain: TLocationSensor
+    OnLocationChanged = LocationSensorMainLocationChanged
+    Left = 184
+    Top = 296
+  end
+end

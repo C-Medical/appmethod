@@ -1,0 +1,40 @@
+inherited MainForm_LgXhdpiTb: TMainForm_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited mvMenu: TMultiView
+    Size.Height = 829.000000000000000000
+    inherited ToolBar1: TToolBar
+      inherited btnHideMultiView: TSpeedButton
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+      end
+    end
+    inherited lbxMenu: TListBox
+      Size.Height = 781.000000000000000000
+      inherited ListBoxItemLatitude: TListBoxItem
+        Padding.Left = 20.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+      end
+      inherited ListBoxItemSubThoroughfare: TListBoxItem [8]
+      end
+      inherited ListBoxItemThoroughfare: TListBoxItem [9]
+      end
+    end
+  end
+  inherited Layout1: TLayout
+    Size.Width = 230.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited toolbarMain: TToolBar
+      Size.Width = 230.000000000000000000
+      inherited Label1: TLabel
+        Size.Width = 230.000000000000000000
+      end
+    end
+    inherited WebBrowser1: TWebBrowser
+      Size.Width = 230.000000000000000000
+      Size.Height = 781.000000000000000000
+    end
+  end
+end
