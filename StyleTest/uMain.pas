@@ -32,6 +32,7 @@ type
     ComboBox1: TComboBox;
     Edit1: TEdit;
     DateEdit1: TDateEdit;
+    ListBoxItem13: TListBoxItem;
     procedure Button1Click(Sender: TObject);
   private
     { private êÈåæ }
@@ -48,6 +49,7 @@ uses
   FMX.Styles;
 
 {$R *.fmx}
+{$R *.LgXhdpiTb.fmx ANDROID}
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
