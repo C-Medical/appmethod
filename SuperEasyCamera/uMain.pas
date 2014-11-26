@@ -6,22 +6,20 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
   FMX.Layouts, FMX.Objects, FMX.ListView.Types, FMX.ListView,
-  FMX.Controls.Presentation, FMX.Edit, FMX.MultiView, uNameInput, uList;
+  FMX.Controls.Presentation, FMX.Edit, FMX.MultiView, uList;
 
 type
   TfrmMain = class(TForm)
     Footer: TToolBar;
     StyleBook1: TStyleBook;
     btnCamera: TButton;
-    btnAddDir: TButton;
     FlowLayout1: TFlowLayout;
     frmList: TfrmList;
     CalloutRectangle1: TCalloutRectangle;
     Text1: TText;
-    procedure btnAddDirClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
-    FNameInputDlg: TfrmNameInput;
   public
     { Public declarations }
   end;
@@ -33,13 +31,10 @@ implementation
 
 {$R *.fmx}
 
-procedure TfrmMain.btnAddDirClick(Sender: TObject);
+
+procedure TfrmMain.FormCreate(Sender: TObject);
 begin
-  InputQuery('ñºëOÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢ÅB', [''], [''],
-    procedure(const AResult: TModalResult; const AValues: array of string)
-  begin
-    frmList.lvMain.Items.Add.Text := AValues[0];
-  end);
+  frmList.Initialize;
 end;
 
 end.

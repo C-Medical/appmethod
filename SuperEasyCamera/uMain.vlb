@@ -5,12 +5,9 @@ Coordinates=77,256,46,33
 Coordinates=253,309,80,36
 
 []
-Coordinates=10,256,49,33
+Coordinates=259,188,53,51
 Visible=True
 
 [btnCamera]
 Coordinates=190,188,53,51
-
-[btnAddDir]
-Coordinates=259,188,53,51
 

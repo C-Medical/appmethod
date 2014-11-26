@@ -4,7 +4,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   uMain in 'uMain.pas' {frmMain},
-  uList in 'uList.pas' {frmList: TFrame};
+  uList in 'uList.pas' {frmList: TFrame},
+  uCommon in 'uCommon.pas';
 
 {$R *.res}
 
