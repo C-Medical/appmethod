@@ -37,10 +37,10 @@ type
     procedure FDConnection1BeforeConnect(Sender: TObject);
     procedure lvMainGesture(Sender: TObject; const EventInfo: TGestureEventInfo;
       var Handled: Boolean);
+    procedure FDQuerySelectDirAfterGetRecord(DataSet: TFDDataSet);
   private
     { private êÈåæ }
     FCurrentDirId: Int64;
-    procedure LoadData;
   public
     { public êÈåæ }
     procedure Initialize;
@@ -58,7 +58,8 @@ begin
   imgPic.Visible := False;
 
   FDQueryCreateTableDir.ExecSQL;
-  LoadData;
+  FDQuerySelectDir.ParamByName('ParentId').AsInteger := FCurrentDirId;
+  FDQuerySelectDir.Open;
 end;
 
 procedure TfrmList.FDConnection1BeforeConnect(Sender: TObject);
@@ -69,11 +70,10 @@ begin
   {$ENDIF}
 end;
 
-procedure TfrmList.LoadData;
+
+procedure TfrmList.FDQuerySelectDirAfterGetRecord(DataSet: TFDDataSet);
 begin
-  FDQuerySelectDir.ParamByName('ParentId').AsInteger := FCurrentDirId;
-  FDQuerySelectDir.Open;
-  ShowMessage(FDQuerySelectDir.FieldByName('Name').AsString);
+  ShowMessage(DataSet.FieldByName('Name').AsString);
 end;
 
 procedure TfrmList.actAddExecute(Sender: TObject);
